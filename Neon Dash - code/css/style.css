@@ -1,0 +1,68 @@
+body {
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#canvas {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 110px 1px rgba(211, 211, 211, 0.7);
+}
+#restartButton {
+  display: none; /* Скрываем по умолчанию */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
+  color: white;
+  background: linear-gradient(45deg, #ff6f61, #ff9068);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#restartButton:hover {
+  background: linear-gradient(45deg, #ff9068, #ff6f61);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+#restartButton:active {
+  transform: translate(-50%, -50%) scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.form {
+  font-size: 18px;
+  display: flex;
+  gap: 30px;
+  align-items: end;
+  position: relative;
+  right: 17px;
+}
+.label {
+  color: #f7cc4d;
+  font-size: 18px;
+}
+.input {
+  font-size: 18px;
+  border-radius: 9px;
+  padding-left: 10px;
+}
+.play {
+  font-size: 18px;
+  background: #f7cc4d;
+  border: none;
+  width: 110px;
+  border-radius: 9px;
+}
